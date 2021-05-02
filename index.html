@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <link href="style.css" type="text/css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<script src="script.js"></script>
+</head>
+<body onload="lire();">
+  <div id="cv">
+
+ <div class="resume">
+  
+   <div class="resume_left">
+     <div class="resume_profile">
+       <img src="graduate-student-icon-robe-graduation_48369-11319.jpg" id="output" alt="profile_pic">
+     </div>
+     <div class="resume_content">
+       <div class="resume_item resume_info">
+         <div class="title">
+           <p class="bold" id ="nom"></p>
+           <p class="regular" id="post"></p>
+         </div>
+         <ul>
+           <li>
+             <div id="lieuxi"  class="icon">
+               <i class="fas fa-map-signs"></i>
+             </div>
+             <div class="data" id ="lieux">
+              
+             </div>
+           </li>
+           <li>
+             <div id="phonei" class="icon">
+               <i  class="fas fa-mobile-alt"></i>
+             </div>
+             <div class="data" id="phone">
+             </div>
+           </li>
+           <li>
+             <div id="maili"  class="icon">
+               <i class="fas fa-envelope"></i>
+             </div>
+             <div class="data" id="mail">
+             </div>
+           </li>
+          
+         </ul>
+       </div>
+       <div class="resume_item resume_skills">
+         <div class="title">
+           <p class="bold">Compétences</p>
+         </div>
+         <ul>
+           <li id="nskill1i">
+             <div class="skill_name" id="skill1">
+               
+             </div>
+             <div  class="skill_progress">
+               <span id="nskill1"></span>
+             </div>
+             <div class="skill_per" id="pskill1" ></div>
+           </li>
+           <li id="nskill2i">
+             <div class="skill_name" id="skill2">
+               
+             </div>
+             <div class="skill_progress">
+               <span id="nskill2"></span>
+             </div>
+             <div class="skill_per" id="pskill2" ></div>
+           </li>
+           <li id="nskill3i">
+             <div class="skill_name" id="skill3">
+               
+             </div>
+             <div class="skill_progress">
+               <span id="nskill3"></span>
+             </div>
+             <div class="skill_per" id="pskill3" ></div>
+           </li>
+           <li id="nskill4i">
+             <div class="skill_name" id="skill4">
+               
+             </div>
+             <div class="skill_progress">
+               <span id="nskill4"></span>
+             </div>
+             <div class="skill_per" id="pskill4" ></div>
+           </li>
+           <li id="nskill5i">
+             <div class="skill_name" id="skill5">
+               
+             </div>
+             <div class="skill_progress">
+               <span id="nskill5"></span>
+             </div>
+             <div class="skill_per" id="pskill5" ></div>
+           </li>
+         
+         
+         </ul>
+       </div>
+       <div class="resume_item resume_social">
+         <div class="title">
+           <p class="bold">Social</p>
+         </div>
+         <ul>
+         
+           <li>
+             <div class="icon">
+               <i class="fab fa-linkedin"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Linkedin</p>
+               <p id="link"></p>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+  </div>
+  <div class="resume_right">
+    <div class="resume_item resume_about">
+        <div class="title">
+           <p class="bold">Profil</p>
+         </div>
+        <p id="description"></p>
+    </div>
+    <div class="resume_item resume_work">
+        <div class="title">
+           <p class="bold">Expérience professionnellee</p>
+         </div>
+        <ul>
+            <li id="ex1">
+                <div class="date" id="periode1"></div> 
+                <div class="info">
+                     <p class="semi-bold" id="noms1"></p> 
+                  <p  class="semi-bold" id="poste1"></p>
+                </div>
+            </li>
+             <li id="ex2">
+                <div class="date" id="periode2"></div> 
+                <div class="info">
+                     <p class="semi-bold" id="noms2"></p> 
+                  <p  class="semi-bold" id="poste2"></p>
+                </div>
+            </li>
+             <li id="ex3">
+                <div class="date" id="periode3"></div> 
+                <div class="info">
+                     <p class="semi-bold" id="noms3"></p> 
+                  <p  class="semi-bold" id="poste3"></p>
+                </div>
+            </li>
+           
+        </ul>
+    </div>
+    <div class="resume_item resume_education">
+      <div class="title">
+           <p class="bold">Formation</p>
+         </div>
+      <ul>
+            <li id="forma1">
+                <div class="date" id="periodee1"></div> 
+                <div class="info">
+                     <p class="semi-bold" id="nomse1"></p> 
+                  <p  class="semi-bold" id="postee1"></p>
+                </div>
+            </li>
+            <li  id="forma1">
+                <div class="date" id="periodee2"></div> 
+                <div class="info">
+                     <p class="semi-bold" id="nomse2"></p> 
+                  <p  class="semi-bold" id="postee2"></p>
+                </div>
+            </li>
+            <li  id="forma1">
+                <div class="date" id="periodee3"></div> 
+                <div class="info">
+                     <p class="semi-bold" id="nomse3"></p> 
+                  <p  class="semi-bold" id="postee3"></p>
+                </div>
+            </li>
+            
+            
+        </ul>
+    </div>
+    <div class="resume_item resume_hobby">
+      <div class="title">
+           <p class="bold">Centres d'intérêt</p>
+         </div>
+       <ul>
+         <li><i class="fas fa-book"></i></li>
+         <li><i class="fas fa-gamepad"></i></li>
+         <li><i class="fas fa-music"></i></li>
+         <li><i class="fab fa-pagelines"></i></li>
+      </ul>
+    </div>
+  </div>
+      </div></div>
+      <input type="button" onclick="PrintDiv();" value="Print" />  
+    </body>
+</html>
+
+
+
+
+
+
+
